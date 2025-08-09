@@ -1,0 +1,24 @@
+    body {
+        background-color: azure;
+        font-family: Arial, sans-serif;
+    }
+
+    .container-top {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .linha-corte {
+        border: none;
+        height: 2px;
+        background-color: black;
+        width: 100%;
+    }
