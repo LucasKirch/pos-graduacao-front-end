@@ -1,5 +1,7 @@
     body {
-        background-color: olivedrab;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/US_Woodland_pattern.svg/800px-US_Woodland_pattern.svg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         font-family: "Stardos Stencil", sans-serif;
         color: bisque;
     }
