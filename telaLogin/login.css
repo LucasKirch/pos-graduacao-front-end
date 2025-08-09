@@ -1,0 +1,56 @@
+body {
+    font-family: "Stardos Stencil", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/US_Woodland_pattern.svg/800px-US_Woodland_pattern.svg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    background-color: olivedrab;
+    color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    gap: 10px;
+}
+
+.row-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-logar {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#page-load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}

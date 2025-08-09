@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Special+Elite&family=Stardos+Stencil:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div id="page-load">
+        <h1 style="color:white">Aguarde, você está sendo redirecionado...</h1>
+    </div>
+    <div class="container">
+        <div class="container-login">
+            <h2>Formulário de Login</h2>
+            <div class="row-login">
+                <label>Login:</label>
+                <input id="login" type="text" />
+            </div>
+            <div class="row-login">
+                <label>Senha:</label>
+                <input id="senha" type="password" />
+            </div>
+            <div class="row-btn">
+                <input id="btn-logar" class="btn-logar" value="Logar" width="40px" type="button" />
+            </div>
+
+            <input type="hidden" id="hiddenLogin" value="lucas" />
+            <input type="hidden" id="hiddenSenha" value="lucas123" />
+        </div>
+    </div>
+
+</body>
+<script>
+    const btn = document.getElementById('btn-logar');
+
+    btn.addEventListener('click', () => {
+
+        event.preventDefault();
+
+        const inputUser = document.getElementById('login').value;
+        const inputPass = document.getElementById('senha').value;
+
+        const hiddenUser = document.getElementById('hiddenLogin').value;
+        const hiddenPass = document.getElementById('hiddenSenha').value;
+
+        if (inputUser === hiddenUser && inputPass === hiddenPass) {
+            const pageLoad = document.getElementById('page-load');
+            pageLoad.style.display = 'flex';
+            setTimeout(() => {
+                window.location.href = '../projeto.html';
+            }, 2500)
+        } else {
+            alert('Usuário ou senha incorretos.');
+        }
+
+
+    });
+</script>
+
+</html>
